@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <a>
+        <img src="logo.svg" width="90" height="90" alt="логотип Nerds">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+        <form
+          action="https://echo.htmlacademy.ru"
+          method="GET">
+          <fieldset>
+            <legend>Стоимость:</legend>
+                   <button
+                    type="button"
+                    aria-label="Минимально"
+                    >
+                  <button
+                    type="button"
+                    aria-label="Максимально"
+                  >
+              <p>
+                <label>От
+                  <input
+                    class="price-filter__input"
+                    type="text"
+                    name="min-price"
+                    value="0"/></label>
+                <label>До
+                  <input
+                    class="price-filter__input"
+                    type="text"
+                    name="max-price"
+                    value="15000"/>
+                </label>
+              </p>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="filter-adaptive"
+                  name="grid"
+                  value="adaptive"
+                  checked="checked"/>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="filter-fixed"
+                  name="grid"
+                  value="fixed"/>
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="filter-fluid"
+                  name="grid"
+                  value="fluid"/>
+                <label for="filter-fluid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filter-slider"
+                  name="features"
+                  value="slider"
+                  checked="checked"/>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filter-features"
+                  name="features"
+                  value="features"/>
+                <label for="filter-features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filter-news"
+                  name="features"
+                  value="news"
+                  checked="checked"/>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filter-gallery"
+                  name="features"
+                  value="gallery"/>
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filter-cart"
+                  name="features"
+                  value="cart"/>
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+        <section>
+          <h2>Каталог шаблонов</h2>
+            <p>Сортировать:</p>
+              <ul>
+                <li><a href="">По цене</a></li>
+                <li><a href="">По типу</a></li>
+                <li><a href="">По названию</a></li>
+              </ul>
+              <ul>
+                <li><a aria-label="Вниз"></a></li>
+                <li><a href="" aria-label="Вверх"></a></li>
+              </ul>
+          <ul>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+                <h3><a href="">Sedona</a></h3>
+                <p>Информационный сайт для&nbsp;туристов</p>
+                <a href="">9 900 руб.</a>
+            </li>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+                <h3><a href="">Pink App</a></h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="">9 900 руб.</a>
+            </li>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+              <div>
+                <h3><a href="">Barbershop</a></h3>
+                <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+                <a href="">9 900 руб.</a>
+            </li>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+                <h3><a href="">Mishka</a></h3>
+                <p>Интернет-магазин вязаных&nbsp;игрушек</p>
+                <a href="#">9 900 руб.</a>
+            </li>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+                <h3><a href="">A Plus</a></h3>
+                <p> Лендинг курсов повышения квалификации </p>
+                <a href="#">9 900 руб.</a>
+            </li>
+            <li>
+                <img src="img/img-aplus.jpg" alt=""/>
+                <h3><a href="">Кваст</a></h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="">9 900 руб.</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">Следующая</a></li>
+          </ul>
+        </section>
+    </main>
+    <footer>
+        <section>
+          <h2>Как к нам добраться</h2>
+          <img src="map.png" width="90" height="90" alt="Месторасположение офиса"></a>
+              <p>Nёrds design studio</p>
+              <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+              <p>тел.&nbsp;<a class="contacts__link" href="tel:+78122757575"
+                  >+7 (812) 275-75-75</a></p>
+              <a href="" id="contacts-button">Напишите нам</a>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <a href="" >ВКонтакте"</a>
+            </li>
+            <li>
+              <a href="" >"Facebook"</a>
+               </li>
+            <li>
+              <a href="" >"Instagram"</a>
+
+            </li>
+          </ul>
+
+            <p class="social-offering__title">Давайте дружить, это выгодно!</p>
+            <p class="social-offering__text">
+              Скидка 10% для друзей из социальных сетей.</p>
+          </section>
+        </footer>
+      </body>
+    </html>
