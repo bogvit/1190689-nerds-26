@@ -5,51 +5,29 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <a>
-        <img src="logo.svg" width="90" height="90" alt="логотип Nerds">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+          <div>
+          <a>
+            <img src="logo.svg" width="90" height="90" alt="логотип Nerds">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Корзина</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h1>Магазин готовых шаблонов</h1>
+          </div>
+        </div>
+        </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-        <form
-          action="https://echo.htmlacademy.ru"
-          method="GET">
-          <fieldset>
-            <legend>Стоимость:</legend>
-                   <button
-                    type="button"
-                    aria-label="Минимально"
-                    >
-                  <button
-                    type="button"
-                    aria-label="Максимально"
-                  >
-              <p>
-                <label>От
-                  <input
-                    class="price-filter__input"
-                    type="text"
-                    name="min-price"
-                    value="0"/></label>
-                <label>До
-                  <input
-                    class="price-filter__input"
-                    type="text"
-                    name="max-price"
-                    value="15000"/>
-                </label>
-              </p>
-          </fieldset>
+      <div>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
@@ -128,7 +106,6 @@
             </ul>
           </fieldset>
           <button type="submit">Показать</button>
-        </form>
         <section>
           <h2>Каталог шаблонов</h2>
             <p>Сортировать:</p>
@@ -156,7 +133,6 @@
             </li>
             <li>
                 <img src="img/img-aplus.jpg" alt=""/>
-              <div>
                 <h3><a href="">Barbershop</a></h3>
                 <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
                 <a href="">9 900 руб.</a>
@@ -187,17 +163,9 @@
             <li><a href="">Следующая</a></li>
           </ul>
         </section>
+      </div>
     </main>
     <footer>
-        <section>
-          <h2>Как к нам добраться</h2>
-          <img src="map.png" width="90" height="90" alt="Месторасположение офиса"></a>
-              <p>Nёrds design studio</p>
-              <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-              <p>тел.&nbsp;<a class="contacts__link" href="tel:+78122757575"
-                  >+7 (812) 275-75-75</a></p>
-              <a href="" id="contacts-button">Напишите нам</a>
-        </section>
         <section>
           <ul>
             <li>
@@ -208,10 +176,8 @@
                </li>
             <li>
               <a href="" >"Instagram"</a>
-
             </li>
           </ul>
-
             <p class="social-offering__title">Давайте дружить, это выгодно!</p>
             <p class="social-offering__text">
               Скидка 10% для друзей из социальных сетей.</p>
