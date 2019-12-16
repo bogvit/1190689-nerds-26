@@ -5,20 +5,20 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-      <header>
-          <div>
-          <a>
+      <header class="page-header">
+          <div class="content-wrapper">
+          <a class="logo">
             <img src="logo.svg" width="90" height="90" alt="логотип Nerds">
           </a>
-          <nav>
-            <ul>
+          <nav class="main-nav">
+            <ul class="top-menu">
               <li><a href="index.html">Студия</a></li>
-              <li><a href="">Клиенты</a></li>
+              <li><a href="#">Клиенты</a></li>
               <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="">Контакты</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
-            <ul>
-              <li><a href="">Корзина</a></li>
+            <ul class="cart">
+              <li><a href="#" class="ico-basket">Корзина</a></li>
             </ul>
           </nav>
           <div>
@@ -26,10 +26,11 @@
           </div>
         </div>
         </header>
-    <main>
-      <div>
-          <fieldset>
-            <legend>Сетка:</legend>
+    <main class="page-main">
+      <aside>
+        <form class="form-filters">
+          <fieldset class="form-filters__fieldset form-filters__grid">
+            <legend class="form-filters__legend">Сетка:</legend>
             <ul>
               <li>
                 <input
@@ -58,10 +59,10 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li>
+          <fieldset class="form-filters__fieldset form-filters__features">
+            <legend class="form-filters__legend">Особенности:</legend>
+            <ul class="form-filters__input-wrapper">
+              <li class="form-filters__input-block">
                 <input
                   type="checkbox"
                   id="filter-slider"
@@ -70,7 +71,7 @@
                   checked="checked"/>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li>
+              <li class="form-filters__input-block">
                 <input
                   type="checkbox"
                   id="filter-features"
@@ -78,7 +79,7 @@
                   value="features"/>
                 <label for="filter-features">Блок преимуществ</label>
               </li>
-              <li>
+              <li class="form-filters__input-block">
                 <input
                   type="checkbox"
                   id="filter-news"
@@ -87,7 +88,7 @@
                   checked="checked"/>
                 <label for="filter-news">Новости</label>
               </li>
-              <li>
+              <li class="form-filters__input-block">
                 <input
                   type="checkbox"
                   id="filter-gallery"
@@ -95,7 +96,7 @@
                   value="gallery"/>
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li>
+              <li class="form-filters__input-block">
                 <input
                   type="checkbox"
                   id="filter-cart"
@@ -106,68 +107,76 @@
             </ul>
           </fieldset>
           <button type="submit">Показать</button>
+        </form>
+        </aside>
         <section>
-          <h2>Каталог шаблонов</h2>
-            <p>Сортировать:</p>
-              <ul>
-                <li><a href="">По цене</a></li>
-                <li><a href="">По типу</a></li>
-                <li><a href="">По названию</a></li>
-              </ul>
-              <ul>
-                <li><a aria-label="Вниз"></a></li>
-                <li><a href="" aria-label="Вверх"></a></li>
-              </ul>
-          <ul>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">Sedona</a></h3>
+          <h2 class="catalog__content">Каталог шаблонов</h2>
+          <ul class="catalog-list">
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+                <div>
+                <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт для&nbsp;туристов</p>
                 <a href="">9 900 руб.</a>
+              </div>
             </li>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">Pink App</a></h3>
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+              <div>
+                <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a href="">9 900 руб.</a>
+              </div>
             </li>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">Barbershop</a></h3>
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+              <div>
+                <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
                 <a href="">9 900 руб.</a>
+              </div>
             </li>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">Mishka</a></h3>
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+              <div>
+                <h3><a href="#">Mishka</a></h3>
                 <p>Интернет-магазин вязаных&nbsp;игрушек</p>
                 <a href="#">9 900 руб.</a>
+              </div>
             </li>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">A Plus</a></h3>
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+              <div>
+                <h3><a href="#">A Plus</a></h3>
                 <p> Лендинг курсов повышения квалификации </p>
                 <a href="#">9 900 руб.</a>
+              </div>
             </li>
-            <li>
-                <img src="img/img-aplus.jpg" alt=""/>
-                <h3><a href="">Кваст</a></h3>
+            <li class="catalog-list__item card-product">
+              <div>
+                <img src="#" alt="#"/>
+              </div>
+              <div>
+                <h3><a href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="">9 900 руб.</a>
+                <a href="#">9 900 руб.</a>
+              </div>
             </li>
-          </ul>
-          <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">Следующая</a></li>
           </ul>
         </section>
-      </div>
     </main>
-    <footer>
-        <section>
-          <ul>
+    <footer class="main-footer">
+      <ul class="social">
             <li>
               <a href="" >ВКонтакте"</a>
             </li>
@@ -181,7 +190,6 @@
             <p class="social-offering__title">Давайте дружить, это выгодно!</p>
             <p class="social-offering__text">
               Скидка 10% для друзей из социальных сетей.</p>
-          </section>
         </footer>
       </body>
     </html>
